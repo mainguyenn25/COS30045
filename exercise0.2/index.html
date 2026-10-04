@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Power Appliances | Home</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <header>
+        <nav class="navbar">
+            <a href="index.html" class="logo-link">
+                <img src="assets/img/PowerIcon.png" alt="Power Appliances Logo">
+            </a>
+
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="televisions.html">Televisions</a></li>
+                <li><a href="about.html">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Understanding Appliance Energy Consumption</h1>
+                <p>
+                    Learn how household appliances contribute to energy consumption
+                    and electricity costs in the Australian market.
+                </p>
+                <a href="#calculator" class="button">Try the Energy Calculator</a>
+            </div>
+        </section>
+
+        <!-- Introduction -->
+        <section class="content-section">
+            <h2>Energy Consumption in Australian Homes</h2>
+
+            <p>
+                Household appliances play an important role in Australia's
+                electricity consumption. Appliances such as televisions,
+                refrigerators, washing machines and air conditioners can
+                contribute significantly to household energy usage.
+            </p>
+
+            <p>
+                Understanding how much electricity an appliance uses can help
+                households make informed decisions about energy efficiency and
+                reduce unnecessary electricity costs.
+            </p>
+
+            <div class="info-cards">
+
+                <div class="card">
+                    <h3>Energy Efficiency</h3>
+                    <p>
+                        Choosing energy-efficient appliances can help reduce
+                        electricity consumption over time.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <h3>Electricity Costs</h3>
+                    <p>
+                        The amount of electricity an appliance consumes affects
+                        household electricity bills.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <h3>Smart Choices</h3>
+                    <p>
+                        Understanding appliance usage can help consumers make
+                        better purchasing and usage decisions.
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Energy Calculator -->
+        <section class="calculator-section" id="calculator">
+
+            <h2>Appliance Energy Calculator</h2>
+
+            <p>
+                Enter the appliance power, average daily usage and electricity
+                price to estimate energy consumption and cost.
+            </p>
+
+            <form id="energyForm" class="calculator-form">
+
+                <div class="form-group">
+                    <label for="power">
+                        Appliance Power (Watts)
+                    </label>
+
+                    <input
+                        type="number"
+                        id="power"
+                        name="power"
+                        min="1"
+                        step="1"
+                        placeholder="e.g. 100"
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="hours">
+                        Average Hours Used Per Day
+                    </label>
+
+                    <input
+                        type="number"
+                        id="hours"
+                        name="hours"
+                        min="0"
+                        max="24"
+                        step="0.1"
+                        placeholder="e.g. 5"
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="price">
+                        Electricity Price (cents per kWh)
+                    </label>
+
+                    <input
+                        type="number"
+                        id="price"
+                        name="price"
+                        min="0"
+                        step="0.1"
+                        placeholder="e.g. 30"
+                    >
+                </div>
+
+                <button type="submit" class="button">
+                    Calculate
+                </button>
+
+            </form>
+
+            <div id="calculatorResult" class="result-panel">
+                <p>
+                    Enter your appliance information and click
+                    <strong>Calculate</strong> to see the results.
+                </p>
+            </div>
+
+        </section>
+
+        <!-- FAQ -->
+        <section class="content-section faq-section">
+
+            <h2>Frequently Asked Questions</h2>
+
+            <div class="faq-item">
+                <button class="faq-question">
+                    Why is appliance energy consumption important?
+                    <span>+</span>
+                </button>
+
+                <div class="faq-answer">
+                    <p>
+                        Understanding energy consumption can help households
+                        manage electricity usage and potentially reduce
+                        electricity costs.
+                    </p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question">
+                    Which appliances can consume a lot of electricity?
+                    <span>+</span>
+                </button>
+
+                <div class="faq-answer">
+                    <p>
+                        Appliances such as air conditioners, electric heaters,
+                        refrigerators and some entertainment systems may
+                        contribute significantly to household electricity use.
+                    </p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question">
+                    How can I reduce appliance energy consumption?
+                    <span>+</span>
+                </button>
+
+                <div class="faq-answer">
+                    <p>
+                        Users can reduce energy consumption by choosing
+                        efficient appliances, avoiding unnecessary usage and
+                        turning appliances off when they are not required.
+                    </p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question">
+                    Does appliance power determine electricity cost?
+                    <span>+</span>
+                </button>
+
+                <div class="faq-answer">
+                    <p>
+                        Appliance power is one factor. The amount of time the
+                        appliance is used and the electricity price also affect
+                        the total cost.
+                    </p>
+                </div>
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>
+            &copy; <span id="currentYear"></span>
+            Thi Mai Nguyen Nguyen 104979418
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,493 @@
+
+/* =========================
+   General Styles
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f5f7fa;
+}
+
+main {
+    min-height: 70vh;
+}
+
+h1,
+h2,
+h3 {
+    line-height: 1.3;
+}
+
+h2 {
+    color: #123b65;
+    margin-bottom: 20px;
+}
+
+
+/* =========================
+   Navigation
+========================= */
+
+header {
+    background-color: #123b65;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.navbar {
+    max-width: 1200px;
+    margin: 0 auto;
+    min-height: 80px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 10px 25px;
+}
+
+.logo-link {
+    display: flex;
+    align-items: center;
+}
+
+.logo-link img {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+
+    transition: transform 0.3s ease;
+}
+
+.logo-link:hover img {
+    transform: scale(1.1);
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 10px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+
+    padding: 12px 20px;
+    border-radius: 5px;
+
+    transition:
+        background-color 0.3s ease,
+        color 0.3s ease;
+}
+
+.nav-links a:hover {
+    background-color: #2d6a9f;
+}
+
+.nav-links a.active {
+    background-color: white;
+    color: #123b65;
+    font-weight: bold;
+}
+
+
+/* =========================
+   Hero
+========================= */
+
+.hero {
+    background: linear-gradient(
+        135deg,
+        #123b65,
+        #2d6a9f
+    );
+
+    color: white;
+    padding: 90px 20px;
+    text-align: center;
+}
+
+.hero-content {
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+.hero h1 {
+    font-size: 42px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+
+/* =========================
+   Buttons
+========================= */
+
+.button {
+    display: inline-block;
+
+    background-color: #f5b942;
+    color: #123b65;
+
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+
+    padding: 12px 24px;
+
+    font-size: 16px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition:
+        background-color 0.3s ease,
+        transform 0.2s ease;
+}
+
+.button:hover {
+    background-color: #ffd166;
+    transform: translateY(-2px);
+}
+
+
+/* =========================
+   Page Header
+========================= */
+
+.page-header {
+    background-color: #e7eef5;
+
+    text-align: center;
+
+    padding: 60px 20px;
+}
+
+.page-header h1 {
+    color: #123b65;
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.page-header p {
+    max-width: 750px;
+    margin: 0 auto;
+}
+
+
+/* =========================
+   Content
+========================= */
+
+.content-section {
+    max-width: 1100px;
+    margin: 0 auto;
+
+    padding: 60px 25px;
+}
+
+.content-section p {
+    margin-bottom: 15px;
+}
+
+
+/* =========================
+   Cards
+========================= */
+
+.info-cards {
+    display: grid;
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 25px;
+
+    margin-top: 30px;
+}
+
+.card {
+    background-color: white;
+
+    padding: 25px;
+
+    border-radius: 8px;
+
+    box-shadow:
+        0 3px 10px rgba(0, 0, 0, 0.08);
+
+    border-top: 4px solid #2d6a9f;
+}
+
+.card h3 {
+    color: #123b65;
+    margin-bottom: 10px;
+}
+
+
+/* =========================
+   Calculator
+========================= */
+
+.calculator-section {
+    max-width: 900px;
+    margin: 40px auto;
+
+    padding: 45px 30px;
+
+    background-color: #e7eef5;
+
+    border-radius: 10px;
+}
+
+.calculator-section h2 {
+    text-align: center;
+}
+
+.calculator-section > p {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.calculator-form {
+    display: grid;
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    font-weight: bold;
+    margin-bottom: 7px;
+    color: #123b65;
+}
+
+.form-group input {
+    padding: 12px;
+
+    border: 1px solid #bbb;
+    border-radius: 5px;
+
+    font-size: 16px;
+}
+
+.form-group input:focus {
+    outline: 2px solid #2d6a9f;
+}
+
+.calculator-form .button {
+    width: 150px;
+    margin: 10px auto 0;
+}
+
+.result-panel {
+    margin-top: 30px;
+
+    padding: 25px;
+
+    background-color: white;
+
+    border-left: 5px solid #2d6a9f;
+
+    border-radius: 5px;
+
+    min-height: 80px;
+}
+
+.result-panel h3 {
+    color: #123b65;
+    margin-bottom: 15px;
+}
+
+.result-panel p {
+    margin-bottom: 8px;
+}
+
+.result-panel .error {
+    color: #b42318;
+    font-weight: bold;
+}
+
+
+/* =========================
+   FAQ
+========================= */
+
+.faq-section {
+    max-width: 900px;
+}
+
+.faq-item {
+    margin-bottom: 10px;
+}
+
+.faq-question {
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 18px;
+
+    background-color: #123b65;
+    color: white;
+
+    border: none;
+    border-radius: 5px;
+
+    cursor: pointer;
+
+    text-align: left;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.faq-question:hover {
+    background-color: #2d6a9f;
+}
+
+.faq-question span {
+    font-size: 22px;
+}
+
+.faq-answer {
+    display: none;
+
+    background-color: white;
+
+    padding: 20px;
+
+    border: 1px solid #ddd;
+    border-top: none;
+}
+
+.faq-answer.show {
+    display: block;
+}
+
+
+/* =========================
+   Table
+========================= */
+
+.table-container {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+
+    background-color: white;
+
+    margin-top: 25px;
+}
+
+th,
+td {
+    padding: 15px;
+    text-align: left;
+
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #123b65;
+    color: white;
+}
+
+tr:hover {
+    background-color: #eef4f8;
+}
+
+
+/* =========================
+   Tips
+========================= */
+
+.tips-list {
+    margin-top: 20px;
+    padding-left: 25px;
+}
+
+.tips-list li {
+    margin-bottom: 12px;
+}
+
+
+/* =========================
+   Footer
+========================= */
+
+footer {
+    background-color: #123b65;
+    color: white;
+
+    text-align: center;
+
+    padding: 30px 20px;
+
+    margin-top: 40px;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+
+/* =========================
+   Responsive Design
+========================= */
+
+@media (max-width: 768px) {
+
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+        padding: 15px;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .hero p {
+        font-size: 18px;
+    }
+
+    .info-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .calculator-section {
+        margin: 30px 15px;
+    }
+
+    .content-section {
+        padding: 40px 20px;
+    }
+}

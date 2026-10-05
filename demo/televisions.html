@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Televisions | COS30045</title>
+    <link rel="icon" href="assets/img/PowerIcon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Space+Grotesk:wght@600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <header class="site-header">
+        <nav class="nav" aria-label="Main">
+            <a class="logo" href="index.html"><img src="assets/img/PowerIcon.png" alt="" width="44"
+                    height="44"><span>COS<b>30045</b></span></a>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="televisions.html" class="active" aria-current="page">Televisions</a></li>
+                <li><a href="about.html">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="page-hero">
+            <div class="wrap">
+                <h1>Choosing your right <br> television models</h1>
+                <p class="lead">Choosing a television can be challenging because of the several brands, display technologies, 
+                    and energy usage options available. This analysis aims to help consumers make decision by comparing 
+                    leading television brands and to provide best picture quality and energy efficiency.</p>
+            </div>
+        </section>
+
+        <section class="wrap block television-analysis">
+            <p class="pull">Two televisions can both carry five stars for Star2 rating. One is 32-inch, the other 65-inch. The data says
+                their power use is very different.</p>
+
+            <h2> How is screen size and energy consumption related?</h2>
+
+            <img
+            src="assets/img/q1.png"
+            alt="Scatter plot showing relationship between screensize and energy consumption"
+            />
+
+            <p>The scatter plot shows a strong positive relationship between screensize and energy consumption, 
+                with larger TV sizes generally consuming more energy per year.</p>
+            <br>
+            <br>
+
+
+            <h2> How is screen size and Star2 rating related?</h2>
+            <img
+            src="assets/img/q2.png"
+            alt="Scatter plot showing relationship between screensize and Star2 rating"
+            />
+            <p>It is clearly seen that Star2 ratings vary considerably 
+                across different screen sizes, suggesting that screen size alone does not Star2 rating of TV models.</p>
+            <br>
+            <br>
+
+            <h2> How is Star2 rating and average mode power related?</h2>
+            <img
+            src="assets/img/q3.png"
+            alt="Scatter plot showing relationship between mode power related and Star2 rating"
+            />
+            <p>The scatter plot shows a relationship between Star2 ratings and average mode power, 
+                with less star2 rating generally consuming more avaerage power</p>
+
+            <div class="results" id="overview-results" aria-live="polite">
+                <p><b>The Overview:</b>
+                    Star2 is useful for comparing the energy efficiency of TVs with similar screen sizes,
+                     but it should not be used to directly compare TVs of different sizes. 
+                     For comparisons across different TV sizes, energy consumption is 
+                     more appropriate because it represents the estimated amount of electricity each TV actually uses.</p>
+            </div>
+            <br>
+            <br>
+            
+
+            <h2> The other questions</h2>
+            <br>
+
+            <h3> Which screen type uses most average mode power?</h3>
+            <br>
+            <img
+            src="assets/img/q4.png"
+            alt="The bar chart showing the average mode power of three sceen types"
+            />
+            <p>The bar chart compares the average power mode of three screen technology.
+                With 130.28 watts, OLED consumes most power mode energy, followed by LCD(LED) with 121.78 watts
+                and LCD with 92.25 watts.
+            </p>
+            <br>
+
+            <h3> Which brands dominate the TV markets in Australia?</h3>
+            <br>
+            <img
+            src="assets/img/q5.png"
+            alt="Top 5 brands sold in Australia"
+            />
+            <p>This pie chart shows the market share of the five leading brands. 
+                Samsung leads with 1,193, followed by Kogan (807), LG (723), Hisense (330) and Sylvox (140) </p>
+            <br>
+
+            <h3> Which brand is the most sufficient energy-savings?</h3>
+            <br>
+            <img
+            src="assets/img/q6.png"
+            alt="Top 10 energy-saving brand in Autralia"
+            />
+            <p>This chart shows the average power use of the ten most energy-efficient brands. 
+                Tenet is the lowest at 14.50 W and Myvi the highest at 27.33 W, so even among efficient brands the gap is almost double.</p>
+            <br>
+             
+        </section>
+
+
+        <section class="wrap block" id="calc">
+            <h2>Appliance energy calculator</h2>
+
+            <form id="calc-form" class="calc" novalidate>
+                <div class="field"><label for="watts">Power usage (watts)</label><input id="watts" type="number" min="0"
+                        step="any" inputmode="decimal"><small class="err" id="watts-err"></small>
+                </div>
+
+                <div class="field"><label for="hours">Hours of use per day</label><input id="hours" type="number"
+                        min="0" max="24" step="any" inputmode="decimal"><small class="err" id="hours-err"></small>
+                </div>
+
+                <div class="field"><label for="price">Electricity price (cents per kWh)</label><input id="price"
+                        type="number" min="0" step="any" value="32" inputmode="decimal"><small class="err"
+                        id="price-err"></small>
+                </div>
+                        
+                <button class="btn" type="submit">Calculate</button>
+            </form>
+
+            <div class="results" id="results" aria-live="polite">
+                <p>Enter your details and press Calculate.</p>
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; <span id="year">2026</span> Thi Mai Nguyen Nguyen 104979418.</p>
+        <p>Generative AI acknowledgement: this website was created with the assistance of Claude (Anthropic).</p>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>

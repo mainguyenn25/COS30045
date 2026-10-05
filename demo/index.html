@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Home | COS30045</title>
+    <link rel="icon" href="assets/img/PowerIcon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Space+Grotesk:wght@600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <header class="site-header">
+        <nav class="nav" aria-label="Main">
+            <a class="logo" href="index.html"><img src="assets/img/PowerIcon.png" alt="" width="44"
+                    height="44"><span>COS<b>30045</b></span></a>
+            <ul>
+                <li><a href="index.html" class="active" aria-current="page">Home</a></li>
+                <li><a href="televisions.html">Televisions</a></li>
+                <li><a href="about.html">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="wrap hero-grid">
+                <div>
+                    <h1>Understanding<br>Appliance Energy Consumption in Australia </h1>
+                    <p class="lead">A practical starting point for understanding how everyday appliances use
+                        electricity, what that means for your bill, and where small changes add up.</p>
+                    <a class="btn" href="televisions.html">Explore televisions</a> 
+                    <a class="btn alt" href="#faq">Read the FAQ</a>
+                </div>
+                <div class="disc"><strong>~2,000</strong><span>kWh a year: typical home appliance use</span></div>
+            </div>
+        </section>
+        <section class="wrap block">
+            <h2>Where Australian homes use power</h2>
+            <div class="cols">
+                <article>
+                    <h3>Heating &amp; cooling</h3>
+                    <p>Usually the largest slice of a household bill, and the one most affected by climate zone and
+                        insulation.</p>
+                </article>
+                <article>
+                    <h3>Hot water</h3>
+                    <p>Electric storage systems run for hours a day; heat pumps use far less energy.</p>
+                </article>
+                <article>
+                    <h3>Entertainment</h3>
+                    <p>Televisions, consoles and set-top boxes add up, especially left on standby.</p>
+                </article>
+            </div>
+        </section>
+        <section class="wrap block" id="faq">
+            <h2>Frequently asked questions</h2>
+            <div class="accordion">
+                <div class="acc-item"><button class="acc-btn" aria-expanded="false" aria-controls="a1" id="q1">What is a
+                        kilowatt-hour (kWh)?</button>
+                    <div class="acc-panel" id="a1" role="region" aria-labelledby="q1" hidden>
+                        <p>A kWh is the energy used by a 1,000 watt appliance running for one hour. Retailers bill you
+                            per kWh.</p>
+                    </div>
+                </div>
+                <div class="acc-item"><button class="acc-btn" aria-expanded="false" aria-controls="a2" id="q2">What do
+                        energy rating stars mean?</button>
+                    <div class="acc-panel" id="a2" role="region" aria-labelledby="q2" hidden>
+                        <p>Stars compare efficiency within a similar size range, so a large and a small model can share
+                            a rating but use very different power.</p>
+                    </div>
+                </div>
+                <div class="acc-item"><button class="acc-btn" aria-expanded="false" aria-controls="a3" id="q3">Does
+                        standby power really matter?</button>
+                    <div class="acc-panel" id="a3" role="region" aria-labelledby="q3" hidden>
+                        <p>Small standby draws run all day, every day, so they can quietly add a noticeable amount each
+                            year.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="site-footer">
+        <p>&copy; <span id="year">2026</span> Thi Mai Nguyen Nguyen 104979418.</p>
+        <p>Generative AI acknowledgement: this website was created with the assistance of Claude (Anthropic).</p>
+    </footer>
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>

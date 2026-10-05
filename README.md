@@ -1,6 +1,6 @@
 
 # Appliance Energy Consumption
-LIVE DEMO: 
+LIVE DEMO: https://mainguyenn25.github.io/COS30045-Demo1/ 
 
 Appliance Energy Consumption is a small educational website. I built it for COS30045 Data
 Visualisation. It uses HTML, CSS and JavaScript to present a three-page guide

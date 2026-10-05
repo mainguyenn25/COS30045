@@ -1,7 +1,7 @@
 
 # Appliance Energy Consumption
 
-WattWise is a small educational website. I built it for COS30045 Data
+Appliance Energy Consumption is a small educational website. I built it for COS30045 Data
 Visualisation. It uses HTML, CSS and JavaScript to present a three-page guide
 to appliance energy consumption in the Australian market
 
@@ -17,8 +17,8 @@ No external JavaScript libraries or frameworks are used.
 
 The website contains three HTML pages:
 
-1. Home: 
-2. Televisions:A data story about what drives television power use, built from the Australian Government Energy Rating data set, plus a yearly-use estimator.
+1. Home: Overview for project
+2. Televisions: A data story about what drives television power use, built from the Australian Government Energy Rating data set, plus a yearly-use estimator.
 3. About Us: Project context
 
 ## How to Run

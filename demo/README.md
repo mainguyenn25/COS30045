@@ -64,12 +64,9 @@ Other questions
 
 The data comes from the Australian Government Energy Rating register,
 published on data.gov.au as "Energy Rating Data for household appliances -
-Labelled Products". I used the Televisions data set, along with the
-accompanying DOCX file that describes what each column holds.
+Labelled Products".
 
-Downloaded on 8th September 2026 from https://data.gov.au/data/dataset/energy-rating-for-household-appliances
-
-The file used was `tv_2026_09_08.csv`, which held 5,018 rows before cleaning.
+The file used was `tv_2026_09_28.csv`, which held 5,340 rows before cleaning.
 
 ### Data processing
 

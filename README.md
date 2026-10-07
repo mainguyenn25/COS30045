@@ -42,13 +42,15 @@ This story is written for Australian consumers who are considering buying a new 
 What they want is the energy consumption of televisions currently available on the 
 Australian market.
 
+I splited into two kinds of question:
+
 Questions directly affect the buying choice:
 
 - How does screen size affect energy consumption?
 - How are screen size and Star2 rating related?
 - How are Star2 rating and average mode power related?
 
-Other questions:
+Other questions (good to know):
 
 - Which screen type uses most average mode power?
 - Which brand dominates the TV markets in Australia?
@@ -83,7 +85,6 @@ products in Australia. So there is no privacy risk in using or republishing it.
 ## AI Declaration
 
 ### Tools used
-
 
 - **Claude (Anthropic)** - Generative AI was used to assist with website development, including
 HTML structure, CSS styling, JavaScript functionality and placeholder
